@@ -1,84 +1,150 @@
 ---
+import phone from '../assets/phonepic.png';
+
+// Features array
 const features = [
   {
-    icon: '⚡',
-    title: 'Emergency-First Design',
-    description: 'Built specifically for critical situations where every minute counts. Automated workflows reduce coordination time from hours to minutes.',
+    icon: '🚑',
+    title: 'Emergency-First Architecture',
+    description:
+      'Purpose-built for life-critical scenarios where speed is essential. Automated donor matching, instant alerts, and smart workflows reduce coordination time from hours to just minutes—saving lives when every second matters.',
   },
   {
-    icon: '🤖',
-    title: 'AI-Powered Messaging',
-    description: 'Intelligent agents conduct natural conversations with donors via WhatsApp/SMS, handling availability checks and scheduling automatically.',
+    icon: '🧠',
+    title: 'AI-Powered Donor Communication',
+    description:
+      'Intelligent conversational agents engage donors naturally via WhatsApp and SMS, confirming availability, answering questions, and scheduling donations automatically without manual hospital coordination.',
   },
   {
-    icon: '🔒',
-    title: 'Privacy Protected',
-    description: 'Donor identities remain anonymous. Doctors receive only aggregate summaries—no personal information or phone numbers exposed.',
+    icon: '🛡️',
+    title: 'Medical-Grade Privacy & Security',
+    description:
+      'All donor data is fully protected and anonymized. Hospitals receive only necessary clinical summaries—no personal identities, contact numbers, or sensitive information are ever exposed.',
   },
   {
     icon: '🏥',
-    title: 'Hospital Authority',
-    description: 'All requests originate from verified hospitals. Only approved institutions and doctors can access the platform.',
+    title: 'Verified Hospital Network',
+    description:
+      'Every blood request originates exclusively from authenticated hospitals and licensed medical professionals, ensuring legitimacy, trust, and elimination of fraudulent or informal requests.',
   },
   {
-    icon: '📱',
-    title: 'Low-Bandwidth Compatible',
-    description: 'Works with SMS and basic WhatsApp—no smartphone or internet required for donors to participate.',
+    icon: '📡',
+    title: 'Accessible on Any Device',
+    description:
+      'Designed to work seamlessly on low-bandwidth networks using SMS and basic WhatsApp—no smartphone apps or internet connectivity required for donors to participate.',
   },
   {
-    icon: '✅',
-    title: 'Complete Audit Trail',
-    description: 'Every action logged and timestamped. Full compliance with medical regulations and consent requirements.',
+    icon: '📋',
+    title: 'Full Clinical Audit & Compliance',
+    description:
+      'All actions are securely logged with timestamps, consent tracking, and compliance reporting to meet healthcare regulations and ensure complete operational transparency.',
   },
 ];
 ---
 
-<section class="section-padding bg-gray-50">
-  <div class="section-container">
-    <!-- Section Header -->
-    <div class="text-center max-w-3xl mx-auto mb-16">
-      <div class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-        Platform Features
-      </div>
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6">
-        Why Choose SangRoot?
-      </h2>
-      <p class="text-lg text-gray-600">
-        A comprehensive platform designed for emergency blood coordination in Cameroon
-      </p>
-    </div>
+<section
+  id="features"
+  class="bg-[#f5f3ff] py-20 md:py-28 px-4 sm:px-6 overflow-hidden scroll-mt-24"
+>
+  <!-- Heading -->
+  <div class="text-center mb-12 md:mb-16 pb-8 md:pb-12 animate-fade-in-down"> <!-- Added pb-8 md:pb-12 -->
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+      <span class="animate-gradient-text-purple">Why Choose </span>
+      Sang<span class="text-orange-500">Root</span>
+    </h2>
+    <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+      Among many other features, the app is built and designed to cater for some of the following:
+    </p>
+  </div>
 
-    <!-- Features Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {features.map((feature) => (
-        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="text-5xl mb-4">{feature.icon}</div>
-          <h3 class="text-xl font-heading font-bold text-gray-900 mb-3">
-            {feature.title}
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            {feature.description}
-          </p>
-        </div>
-      ))}
-    </div>
+  <!-- White container background -->
+  <div class="relative max-w-6xl mx-auto bg-white rounded-3xl py-12 md:py-16 px-6 sm:px-8 md:px-10 shadow-lg overflow-visible hover:shadow-2xl transition-shadow duration-500">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 items-start gap-8 md:gap-12 lg:gap-16">
 
-    <!-- Stats Section -->
-    <div class="mt-20 bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl p-8 md:p-12 text-white">
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div>
-          <div class="text-4xl md:text-5xl font-bold mb-2">24/7</div>
-          <div class="text-primary-100">Always Available</div>
-        </div>
-        <div>
-          <div class="text-4xl md:text-5xl font-bold mb-2">&lt;15min</div>
-          <div class="text-primary-100">Average Response Time</div>
-        </div>
-        <div>
-          <div class="text-4xl md:text-5xl font-bold mb-2">100%</div>
-          <div class="text-primary-100">Privacy Protected</div>
+      <!-- Left Features Column (First 3 features) -->
+      <div class="space-y-10 md:space-y-12">
+        {features.slice(0, 3).map((feature, index) => (
+          <div class="space-y-4 md:space-y-5 animate-slide-in-left" style={`animation-delay: ${index * 200}ms;`}>
+            <div class="bg-[#d5f2f0] p-4 rounded-2xl inline-block hover:scale-110 transition-transform duration-300 animate-bounce-in">
+              <span class="text-2xl md:text-3xl">{feature.icon}</span>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold text-gray-800 hover:text-[#3aada8] transition-colors duration-300">
+              {feature.title}
+            </h3>
+            <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+              {feature.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Phone Image -->
+      <div class="relative flex justify-center lg:-mt-32 xl:-mt-44 z-10 animate-scale-in animation-delay-300">
+        <div class="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px]">
+          <div class="relative rounded-[65px] overflow-hidden shadow-2xl bg-white animate-float-phone hover:scale-105 transition-transform duration-500">
+            <img
+              src="/phonepic.png"
+              alt="LifeBlood App"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+          <div class="absolute -inset-4 bg-gradient-to-r from-[#5b4ac7]/20 via-[#3aada8]/20 to-[#5b4ac7]/20 rounded-[50px] blur-xl -z-10 animate-pulse-glow"></div>
         </div>
       </div>
+
+      <!-- Right Features Column (Last 3 features) -->
+      <div class="space-y-10 md:space-y-12">
+        {features.slice(3).map((feature, index) => (
+          <div class="space-y-4 md:space-y-5 text-left lg:text-right animate-slide-in-right" style={`animation-delay: ${index * 200}ms;`}>
+            <div class="bg-[#d5f2f0] p-4 rounded-2xl inline-block lg:ml-auto hover:scale-110 transition-transform duration-300 animate-bounce-in">
+              <span class="text-2xl md:text-3xl">{feature.icon}</span>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold text-gray-800 hover:text-[#3aada8] transition-colors duration-300">
+              {feature.title}
+            </h3>
+            <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+              {feature.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
     </div>
   </div>
 </section>
+
+<style>
+  /* Animations exactly preserved */
+  @keyframes fadeInDown { from {opacity:0;transform:translateY(-30px)} to {opacity:1;transform:translateY(0)} }
+  @keyframes fadeInUp { from {opacity:0;transform:translateY(30px)} to {opacity:1;transform:translateY(0)} }
+  @keyframes slideInLeft { from {opacity:0;transform:translateX(-60px)} to {opacity:1;transform:translateX(0)} }
+  @keyframes slideInRight { from {opacity:0;transform:translateX(60px)} to {opacity:1;transform:translateX(0)} }
+  @keyframes scaleIn { from {opacity:0;transform:scale(.8)} to {opacity:1;transform:scale(1)} }
+  @keyframes bounceIn { 0%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1.05)}70%{transform:scale(.9)}100%{transform:scale(1)} }
+  @keyframes floatPhone { 0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)} }
+  @keyframes pulseSubtle { 0%,100%{opacity:1}50%{opacity:.8} }
+  @keyframes pulseGlow { 0%,100%{opacity:.5}50%{opacity:.8} }
+  @keyframes gradientTextPurple { 0%,100%{background-position:0% 50%}50%{background-position:100% 50%} }
+
+  .animate-fade-in-down{animation:fadeInDown .8s ease-out forwards}
+  .animate-fade-in-up{animation:fadeInUp .8s ease-out forwards}
+  .animate-slide-in-left{animation:slideInLeft 1s ease-out forwards}
+  .animate-slide-in-right{animation:slideInRight 1s ease-out forwards}
+  .animate-scale-in{animation:scaleIn 1s ease-out forwards}
+  .animate-bounce-in{animation:bounceIn .8s cubic-bezier(.68,-.55,.265,1.55) forwards}
+  .animate-float-phone{animation:floatPhone 6s ease-in-out infinite}
+  .animate-pulse-subtle{animation:pulseSubtle 3s ease-in-out infinite}
+  .animate-pulse-glow{animation:pulseGlow 4s ease-in-out infinite}
+  .animate-gradient-text-purple{
+    background:linear-gradient(90deg,#5b4ac7,#8b7fd8,#5b4ac7);
+    background-size:200% 200%;
+    animation:gradientTextPurple 4s ease infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+
+  .animation-delay-100{animation-delay:.1s}
+  .animation-delay-200{animation-delay:.2s}
+  .animation-delay-300{animation-delay:.3s}
+</style>

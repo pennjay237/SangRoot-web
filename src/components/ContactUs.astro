@@ -2,52 +2,52 @@
   <div class="section-container">
     <div class="grid lg:grid-cols-2 gap-12">
       <!-- Left Content -->
-      <div>
-        <div class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+      <div class="animate-slide-in-left">
+        <div class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-4 animate-fade-in-down">
           Get In Touch
         </div>
         
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 animate-fade-in-up">
           Contact Us
         </h2>
         
-        <p class="text-lg text-gray-600 mb-8">
+        <p class="text-lg text-gray-600 mb-8 animate-fade-in-up animation-delay-100">
           Have questions about SangRoot? Want to register your hospital or blood bank? 
           We'd love to hear from you.
         </p>
 
         <!-- Contact Info -->
         <div class="space-y-6">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <div class="flex items-start gap-4 animate-slide-in-left animation-delay-200 hover:translate-x-2 transition-transform duration-300">
+            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0 animate-pulse-soft">
               <svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
             </div>
             <div>
               <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
-              <a href="mailto:contact@sangroot.cm" class="text-primary-500 hover:text-primary-600">
+              <a href="mailto:contact@sangroot.cm" class="text-primary-500 hover:text-primary-600 hover:underline transition-all duration-300">
                 contact@sangroot.cm
               </a>
             </div>
           </div>
 
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <div class="flex items-start gap-4 animate-slide-in-left animation-delay-300 hover:translate-x-2 transition-transform duration-300">
+            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0 animate-pulse-soft animation-delay-100">
               <svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
               </svg>
             </div>
             <div>
               <h3 class="font-semibold text-gray-900 mb-1">Phone</h3>
-              <a href="tel:+237123456789" class="text-primary-500 hover:text-primary-600">
+              <a href="tel:+237123456789" class="text-primary-500 hover:text-primary-600 hover:underline transition-all duration-300">
                 +237 123 456 789
               </a>
             </div>
           </div>
 
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <div class="flex items-start gap-4 animate-slide-in-left animation-delay-400 hover:translate-x-2 transition-transform duration-300">
+            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0 animate-pulse-soft animation-delay-200">
               <svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -62,9 +62,9 @@
       </div>
 
       <!-- Right Form -->
-      <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+      <div class="bg-gray-50 rounded-2xl p-8 shadow-lg animate-slide-in-right hover:shadow-xl transition-shadow duration-500">
         <form id="contact-form" class="space-y-6">
-          <div>
+          <div class="animate-fade-in-up animation-delay-100">
             <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
               Full Name *
             </label>
@@ -73,12 +73,12 @@
               id="name"
               name="name"
               required
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 hover:border-primary-300 focus:scale-[1.02]"
               placeholder="John Doe"
             />
           </div>
 
-          <div>
+          <div class="animate-fade-in-up animation-delay-200">
             <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
               Email Address *
             </label>
@@ -87,12 +87,12 @@
               id="email"
               name="email"
               required
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 hover:border-primary-300 focus:scale-[1.02]"
               placeholder="john@example.com"
             />
           </div>
 
-          <div>
+          <div class="animate-fade-in-up animation-delay-300">
             <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
               Phone Number *
             </label>
@@ -101,12 +101,12 @@
               id="phone"
               name="phone"
               required
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 hover:border-primary-300 focus:scale-[1.02]"
               placeholder="+237 123 456 789"
             />
           </div>
 
-          <div>
+          <div class="animate-fade-in-up animation-delay-400">
             <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
               Message *
             </label>
@@ -115,16 +115,16 @@
               name="message"
               required
               rows="4"
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none hover:border-primary-300 focus:scale-[1.02]"
               placeholder="How can we help you?"
             ></textarea>
           </div>
 
-          <button type="submit" class="w-full btn-primary text-lg">
+          <button type="submit" class="w-full btn-primary text-lg animate-fade-in-up animation-delay-500 hover:scale-105 active:scale-95 transition-transform duration-200">
             Send Message
           </button>
 
-          <div id="form-message" class="hidden p-4 rounded-lg"></div>
+          <div id="form-message" class="hidden p-4 rounded-lg animate-slide-down"></div>
         </form>
       </div>
     </div>
@@ -150,7 +150,7 @@
       
       // Show success message
       formMessage.textContent = 'Thank you! Your message has been sent successfully.';
-      formMessage.className = 'p-4 rounded-lg bg-secondary-100 text-secondary-800';
+      formMessage.className = 'p-4 rounded-lg bg-secondary-100 text-secondary-800 animate-slide-down';
       formMessage.classList.remove('hidden');
       
       // Reset form
@@ -164,8 +164,128 @@
     } catch (error) {
       // Show error message
       formMessage.textContent = 'Sorry, something went wrong. Please try again.';
-      formMessage.className = 'p-4 rounded-lg bg-primary-100 text-primary-800';
+      formMessage.className = 'p-4 rounded-lg bg-primary-100 text-primary-800 animate-slide-down';
       formMessage.classList.remove('hidden');
     }
   });
 </script>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseSoft {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-down {
+    animation: fadeInDown 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 0.4s ease-out forwards;
+  }
+
+  .animate-pulse-soft {
+    animation: pulseSoft 3s ease-in-out infinite;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>

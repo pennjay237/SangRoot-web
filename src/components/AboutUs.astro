@@ -1,64 +1,63 @@
 <section id="about" class="section-padding bg-white">
   <div class="section-container">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Left Image -->
-      <div class="order-2 lg:order-1 animate-slide-in-left">
-        <div class="relative bg-gradient-to-br from-secondary-100 to-primary-100 rounded-2xl shadow-xl aspect-[4/3] overflow-hidden group hover:shadow-2xl transition-shadow duration-500">
-          <!-- Placeholder - replace with actual image -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <svg class="w-48 h-48 text-primary-300 animate-float" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-              <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
-            </svg>
-          </div>
-          <!-- Animated gradient overlay -->
-          <div class="absolute inset-0 bg-gradient-to-br from-primary-400/0 via-secondary-400/0 to-primary-400/0 group-hover:from-primary-400/10 group-hover:via-secondary-400/10 group-hover:to-primary-400/10 transition-all duration-700"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <!-- Left Image - Now stays on left for all screens -->
+      <div class="flex justify-center md:justify-start">
+        <div class="relative overflow-hidden group transition-all duration-500">
+          <!-- Image with border radius and animations -->
+          <img 
+            src="/phonepic.png" 
+            alt="SangRoot mobile app interface showing emergency blood coordination features"
+            id="phone-image"
+            class="w-full max-w-[250px] md:max-w-[280px] lg:max-w-[320px] h-auto rounded-[45px] shadow-xl"
+            loading="lazy"
+          />
         </div>
       </div>
       
-      <!-- Right Content -->
-      <div class="order-1 lg:order-2 animate-slide-in-right">
+      <!-- Right Content - Stays on right for all screens -->
+      <div class="mt-8 md:mt-0">
         <div class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-4 animate-fade-in-down">
           About SangRoot
         </div>
         
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6 animate-fade-in-up">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4 md:mb-6 animate-fade-in-up">
           Emergency Blood Coordination
           <span class="text-primary-500 block mt-2 animate-gradient-text">Made Simple</span>
         </h2>
         
-        <div class="space-y-4 text-gray-600 mb-8 animate-fade-in-up animation-delay-200">
-          <p class="text-lg">
+        <div class="space-y-3 md:space-y-4 text-gray-600 mb-6 md:mb-8 animate-fade-in-up animation-delay-200">
+          <p class="text-base md:text-lg">
             SangRoot is a <strong class="text-gray-900">hospital-led emergency blood coordination platform</strong> designed to remove the operational, emotional, and time burden of finding blood during medical emergencies.
           </p>
           
-          <p>
+          <p class="text-sm md:text-base">
             We act as a coordination middleware, automating communication between hospitals, blood banks, and donors through AI-driven messaging, while respecting Cameroonian medical regulations, privacy, and consent requirements.
           </p>
           
-          <p>
+          <p class="text-sm md:text-base">
             <strong class="text-gray-900">SangRoot does not replace medical decision-making or blood banking systems.</strong> It coordinates people and information; fast, safely, and reliably.
           </p>
         </div>
 
-        <div class="flex flex-wrap gap-4 animate-fade-in-up animation-delay-400">
+        <div class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 animate-fade-in-up animation-delay-400">
           <div class="flex items-center gap-2 text-gray-700 hover:scale-105 transition-transform duration-300">
             <svg class="w-5 h-5 text-secondary-500 animate-bounce-subtle" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
             </svg>
-            <span>Privacy-First Design</span>
+            <span class="text-sm md:text-base">Privacy-First Design</span>
           </div>
           <div class="flex items-center gap-2 text-gray-700 hover:scale-105 transition-transform duration-300 animation-delay-100">
             <svg class="w-5 h-5 text-secondary-500 animate-bounce-subtle animation-delay-100" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
             </svg>
-            <span>AI-Powered Coordination</span>
+            <span class="text-sm md:text-base">AI-Powered Coordination</span>
           </div>
           <div class="flex items-center gap-2 text-gray-700 hover:scale-105 transition-transform duration-300 animation-delay-200">
             <svg class="w-5 h-5 text-secondary-500 animate-bounce-subtle animation-delay-200" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
             </svg>
-            <span>Hospital-Led Process</span>
+            <span class="text-sm md:text-base">Hospital-Led Process</span>
           </div>
         </div>
       </div>
@@ -139,16 +138,38 @@
     }
   }
 
+  /* New Animations for Phone Image */
+  @keyframes scrollReveal {
+    0% {
+      opacity: 0;
+      transform: translateY(100px) scale(0.9);
+    }
+    70% {
+      opacity: 1;
+      transform: translateY(-10px) scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes phoneBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  /* Animation classes - all can be reset and replayed */
   .animate-fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
   }
 
   .animate-fade-in-down {
     animation: fadeInDown 0.6s ease-out forwards;
-  }
-
-  .animate-slide-in-left {
-    animation: slideInLeft 1s ease-out forwards;
   }
 
   .animate-slide-in-right {
@@ -172,6 +193,15 @@
     background-clip: text;
   }
 
+  /* New animation classes for phone */
+  .animate-phone-bounce {
+    animation: phoneBounce 3s ease-in-out infinite;
+  }
+
+  .animate-scroll-reveal {
+    animation: scrollReveal 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
   /* Animation Delays */
   .animation-delay-100 {
     animation-delay: 0.1s;
@@ -189,8 +219,25 @@
     animation-delay: 0.4s;
   }
 
-  /* Scroll-triggered animations - add this class via Intersection Observer if needed */
+  /* Helper class to reset animations */
+  .animation-reset {
+    animation: none !important;
+  }
+
+  /* For reduced motion preferences */
   @media (prefers-reduced-motion: reduce) {
+    .animate-scroll-reveal,
+    .animate-phone-bounce,
+    .animate-fade-in-up,
+    .animate-fade-in-down,
+    .animate-slide-in-right,
+    .animate-bounce-subtle,
+    .animate-gradient-text {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    
     *,
     *::before,
     *::after {
@@ -199,4 +246,151 @@
       transition-duration: 0.01ms !important;
     }
   }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .section-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    #phone-image {
+      max-width: 220px;
+    }
+  }
 </style>
+
+<script>
+  // Animation Manager for the about section
+  document.addEventListener('DOMContentLoaded', function() {
+    const aboutSection = document.getElementById('about');
+    const phoneImage = document.getElementById('phone-image');
+    
+    if (!aboutSection || !phoneImage) return;
+    
+    // Get all animated elements in the right content
+    const animatedElements = aboutSection.querySelectorAll(
+      '.animate-fade-in-down, .animate-fade-in-up, .animate-slide-in-right, ' +
+      '.animate-gradient-text, .animate-bounce-subtle'
+    );
+    
+    // Function to reset and replay all animations
+    function playAllAnimations() {
+      // First, reset all animations
+      animatedElements.forEach(el => {
+        el.classList.add('animation-reset');
+        void el.offsetWidth; // Trigger reflow
+        el.classList.remove('animation-reset');
+      });
+      
+      // Reset phone animations
+      phoneImage.classList.remove('animate-scroll-reveal', 'animate-phone-bounce');
+      void phoneImage.offsetWidth; // Trigger reflow
+      
+      // Play phone scroll reveal
+      phoneImage.classList.add('animate-scroll-reveal');
+      
+      // Play phone bounce after scroll reveal
+      setTimeout(() => {
+        phoneImage.classList.add('animate-phone-bounce');
+      }, 1200);
+      
+      console.log('All animations replayed!');
+    }
+    
+    // Function to check if element is in viewport
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      
+      // Check if element is in the middle 60% of viewport
+      return (
+        rect.top <= windowHeight * 0.8 &&
+        rect.bottom >= windowHeight * 0.2
+      );
+    }
+    
+    // Initial play on page load
+    let initialAnimationPlayed = false;
+    
+    function playInitialAnimation() {
+      if (!initialAnimationPlayed && isElementInViewport(aboutSection)) {
+        playAllAnimations();
+        initialAnimationPlayed = true;
+      }
+    }
+    
+    // Play on scroll when section comes into view
+    let scrollAnimationPlayed = false;
+    
+    function handleScroll() {
+      if (!scrollAnimationPlayed && isElementInViewport(aboutSection)) {
+        playAllAnimations();
+        scrollAnimationPlayed = true;
+      }
+    }
+    
+    // Listen for hash change (when navbar link is clicked)
+    window.addEventListener('hashchange', function() {
+      if (window.location.hash === '#about') {
+        // Small delay to ensure scroll completes
+        setTimeout(() => {
+          playAllAnimations();
+          scrollAnimationPlayed = true;
+        }, 300);
+      }
+    });
+    
+    // Also listen for click events on navbar links (if they exist)
+    document.addEventListener('click', function(e) {
+      // Check if clicked element is a link to #about
+      const link = e.target.closest('a[href="#about"]');
+      if (link) {
+        e.preventDefault();
+        
+        // Scroll to section
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Play animations after scroll
+        setTimeout(() => {
+          playAllAnimations();
+          scrollAnimationPlayed = true;
+        }, 500);
+      }
+    });
+    
+    // Set up Intersection Observer for scroll triggers
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !scrollAnimationPlayed) {
+            playAllAnimations();
+            scrollAnimationPlayed = true;
+          }
+        });
+      }, {
+        threshold: 0.3,
+        rootMargin: '0px 0px -50px 0px'
+      });
+      
+      observer.observe(aboutSection);
+    } else {
+      // Fallback for older browsers
+      window.addEventListener('scroll', handleScroll);
+      window.addEventListener('resize', handleScroll);
+    }
+    
+    // Initial check
+    setTimeout(playInitialAnimation, 100);
+    setTimeout(handleScroll, 200);
+    
+    // Also play animations if user is already on #about page
+    if (window.location.hash === '#about') {
+      setTimeout(() => {
+        playAllAnimations();
+        initialAnimationPlayed = true;
+        scrollAnimationPlayed = true;
+      }, 500);
+    }
+  });
+</script>

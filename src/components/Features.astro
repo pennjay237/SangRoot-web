@@ -1,84 +1,463 @@
 ---
+import phone from '../assets/phonepic.png';
+
+// Features array
 const features = [
   {
-    icon: '⚡',
-    title: 'Emergency-First Design',
-    description: 'Built specifically for critical situations where every minute counts. Automated workflows reduce coordination time from hours to minutes.',
+    icon: '🚑',
+    title: 'Emergency-First Architecture',
+    description:
+      'Purpose-built for life-critical scenarios where speed is essential. Automated donor matching, instant alerts, and smart workflows reduce coordination time from hours to just minutes—saving lives when every second matters.',
   },
   {
-    icon: '🤖',
-    title: 'AI-Powered Messaging',
-    description: 'Intelligent agents conduct natural conversations with donors via WhatsApp/SMS, handling availability checks and scheduling automatically.',
+    icon: '🧠',
+    title: 'AI-Powered Donor Communication',
+    description:
+      'Intelligent conversational agents engage donors naturally via WhatsApp and SMS, confirming availability, answering questions, and scheduling donations automatically without manual hospital coordination.',
   },
   {
-    icon: '🔒',
-    title: 'Privacy Protected',
-    description: 'Donor identities remain anonymous. Doctors receive only aggregate summaries—no personal information or phone numbers exposed.',
+    icon: '🛡️',
+    title: 'Medical-Grade Privacy & Security',
+    description:
+      'All donor data is fully protected and anonymized. Hospitals receive only necessary clinical summaries—no personal identities, contact numbers, or sensitive information are ever exposed.',
   },
   {
     icon: '🏥',
-    title: 'Hospital Authority',
-    description: 'All requests originate from verified hospitals. Only approved institutions and doctors can access the platform.',
+    title: 'Verified Hospital Network',
+    description:
+      'Every blood request originates exclusively from authenticated hospitals and licensed medical professionals, ensuring legitimacy, trust, and elimination of fraudulent or informal requests.',
   },
   {
-    icon: '📱',
-    title: 'Low-Bandwidth Compatible',
-    description: 'Works with SMS and basic WhatsApp—no smartphone or internet required for donors to participate.',
+    icon: '📡',
+    title: 'Accessible on Any Device',
+    description:
+      'Designed to work seamlessly on low-bandwidth networks using SMS and basic WhatsApp—no smartphone apps or internet connectivity required for donors to participate.',
   },
   {
-    icon: '✅',
-    title: 'Complete Audit Trail',
-    description: 'Every action logged and timestamped. Full compliance with medical regulations and consent requirements.',
+    icon: '📋',
+    title: 'Full Clinical Audit & Compliance',
+    description:
+      'All actions are securely logged with timestamps, consent tracking, and compliance reporting to meet healthcare regulations and ensure complete operational transparency.',
   },
 ];
+
+// App store URLs
+const appStoreUrl = 'https://apps.apple.com/app/sangroot';
+const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.sangroot';
 ---
 
-<section class="section-padding bg-gray-50">
-  <div class="section-container">
-    <!-- Section Header -->
-    <div class="text-center max-w-3xl mx-auto mb-16">
-      <div class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-        Platform Features
-      </div>
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-6">
-        Why Choose SangRoot?
-      </h2>
-      <p class="text-lg text-gray-600">
-        A comprehensive platform designed for emergency blood coordination in Cameroon
-      </p>
-    </div>
+<section id="features" class="bg-[#f5f3ff] py-12 md:py-20 lg:py-28 px-4 sm:px-6 overflow-hidden scroll-mt-24">
+  <!-- Heading -->
+  <div class="text-center mb-8 md:mb-12 lg:mb-16 pb-6 md:pb-8 lg:pb-12">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+      <span>Why Choose </span>
+      Sang<span class="text-orange-500">Root</span>
+    </h2>
+    <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mt-3 md:mt-4">
+      Among many other features, the app is built and designed to cater for some of the following:
+    </p>
+  </div>
 
-    <!-- Features Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {features.map((feature) => (
-        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="text-5xl mb-4">{feature.icon}</div>
-          <h3 class="text-xl font-heading font-bold text-gray-900 mb-3">
-            {feature.title}
-          </h3>
-          <p class="text-gray-600 leading-relaxed">
-            {feature.description}
+  <!-- White container background -->
+  <div class="relative max-w-6xl mx-auto bg-white rounded-2xl md:rounded-3xl py-8 md:py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-10 shadow-lg overflow-visible hover:shadow-2xl transition-shadow duration-500">
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 items-start gap-6 md:gap-8 lg:gap-12 xl:gap-16">
+
+      <!-- Left Features Column (First 3 features) -->
+      <div class="space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12">
+        {features.slice(0, 3).map((feature, index) => (
+          <div class="space-y-3 md:space-y-4 lg:space-y-5" data-feature-index={index}>
+            <div class="bg-[#d5f2f0] p-3 md:p-4 rounded-xl md:rounded-2xl inline-block hover:scale-110 transition-transform duration-300">
+              <span class="text-xl md:text-2xl lg:text-3xl">{feature.icon}</span>
+            </div>
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 hover:text-[#3aada8] transition-colors duration-300">
+              {feature.title}
+            </h3>
+            <p class="text-xs md:text-sm lg:text-base text-gray-600 leading-relaxed">
+              {feature.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Phone Image and Download Section -->
+      <div class="relative flex flex-col items-center my-6 md:my-0">
+        <!-- Phone Image (exactly as you had it) -->
+        <div class="relative flex justify-center md:-mt-8 lg:-mt-16 xl:-mt-20 z-10">
+          <div class="relative w-full max-w-[200px] sm:max-w-[240px] md:max-w-[280px] lg:max-w-[320px] xl:max-w-[350px]">
+            <div class="relative rounded-[45px] md:rounded-[55px] lg:rounded-[65px] overflow-hidden shadow-xl md:shadow-2xl bg-white hover:scale-105 transition-transform duration-500">
+              <img
+                src="/phonepic.png"
+                alt="LifeBlood App"
+                id="features-phone-image"
+                class="w-full h-auto object-contain"
+              />
+            </div>
+            <div class="absolute -inset-3 md:-inset-4 bg-gradient-to-r from-[#5b4ac7]/20 via-[#3aada8]/20 to-[#5b4ac7]/20 rounded-[35px] md:rounded-[45px] lg:rounded-[50px] blur-lg md:blur-xl -z-10"></div>
+          </div>
+        </div>
+
+        <!-- Download Section - Added immediately under phone image -->
+        <div class="space-y-3 animate-fade-in-up animation-delay-600 mt-6 md:mt-8 lg:mt-10">
+          <p class="text-xs font-semibold text-gray-700 uppercase tracking-wide animate-bounce-subtle text-center md:text-left">
+            Download Our Mobile App
           </p>
-        </div>
-      ))}
-    </div>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+            <!-- App Store Button - Smaller size -->
+            <a 
+              href={appStoreUrl} 
+              class="inline-flex items-center justify-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 hover:scale-105 active:scale-95 transition-all duration-200 group"
+            >
+              <svg class="w-6 h-6 mr-2 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5M13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+              </svg>
+              <div class="text-left">
+                <div class="text-[10px]">Download on the</div>
+                <div class="text-sm font-semibold -mt-0.5">App Store</div>
+              </div>
+            </a>
 
-    <!-- Stats Section -->
-    <div class="mt-20 bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl p-8 md:p-12 text-white">
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div>
-          <div class="text-4xl md:text-5xl font-bold mb-2">24/7</div>
-          <div class="text-primary-100">Always Available</div>
-        </div>
-        <div>
-          <div class="text-4xl md:text-5xl font-bold mb-2">&lt;15min</div>
-          <div class="text-primary-100">Average Response Time</div>
-        </div>
-        <div>
-          <div class="text-4xl md:text-5xl font-bold mb-2">100%</div>
-          <div class="text-primary-100">Privacy Protected</div>
+            <!-- Google Play Button - Smaller size -->
+            <a 
+              href={googlePlayUrl} 
+              class="inline-flex items-center justify-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 hover:scale-105 active:scale-95 transition-all duration-200 group"
+            >
+              <svg class="w-6 h-6 mr-2 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+              </svg>
+              <div class="text-left">
+                <div class="text-[10px]">GET IT ON</div>
+                <div class="text-sm font-semibold -mt-0.5">Google Play</div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
+
+      <!-- Right Features Column (Last 3 features) -->
+      <div class="space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12">
+        {features.slice(3).map((feature, index) => (
+          <div class="space-y-3 md:space-y-4 lg:space-y-5" data-feature-index={index + 3}>
+            <div class="bg-[#d5f2f0] p-3 md:p-4 rounded-xl md:rounded-2xl inline-block hover:scale-110 transition-transform duration-300">
+              <span class="text-xl md:text-2xl lg:text-3xl">{feature.icon}</span>
+            </div>
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 hover:text-[#3aada8] transition-colors duration-300">
+              {feature.title}
+            </h3>
+            <p class="text-xs md:text-sm lg:text-base text-gray-600 leading-relaxed">
+              {feature.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
     </div>
   </div>
 </section>
+
+<style>
+  /* Animations exactly preserved */
+  @keyframes fadeInDown { 
+    from {opacity:0;transform:translateY(-30px)} 
+    to {opacity:1;transform:translateY(0)} 
+  }
+  
+  @keyframes fadeInUp { 
+    from {opacity:0;transform:translateY(30px)} 
+    to {opacity:1;transform:translateY(0)} 
+  }
+  
+  @keyframes slideInLeft { 
+    from {opacity:0;transform:translateX(-60px)} 
+    to {opacity:1;transform:translateX(0)} 
+  }
+  
+  @keyframes slideInRight { 
+    from {opacity:0;transform:translateX(60px)} 
+    to {opacity:1;transform:translateX(0)} 
+  }
+  
+  @keyframes scaleIn { 
+    from {opacity:0;transform:scale(.8)} 
+    to {opacity:1;transform:scale(1)} 
+  }
+  
+  @keyframes bounceIn { 
+    0%{opacity:0;transform:scale(.3)}
+    50%{opacity:1;transform:scale(1.05)}
+    70%{transform:scale(.9)}
+    100%{transform:scale(1)} 
+  }
+  
+  @keyframes floatPhone { 
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-15px)} 
+  }
+  
+  @keyframes pulseSubtle { 
+    0%,100%{opacity:1}
+    50%{opacity:.8} 
+  }
+  
+  @keyframes pulseGlow { 
+    0%,100%{opacity:.5}
+    50%{opacity:.8} 
+  }
+  
+  @keyframes gradientTextPurple { 
+    0%,100%{background-position:0% 50%}
+    50%{background-position:100% 50%} 
+  }
+
+  @keyframes bounceSubtle {
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-3px)}
+  }
+
+  /* Animation Classes */
+  .animate-fade-in-down{animation:fadeInDown .8s ease-out forwards}
+  .animate-fade-in-up{animation:fadeInUp .8s ease-out forwards}
+  .animate-slide-in-left{animation:slideInLeft 1s ease-out forwards}
+  .animate-slide-in-right{animation:slideInRight 1s ease-out forwards}
+  .animate-scale-in{animation:scaleIn 1s ease-out forwards}
+  .animate-bounce-in{animation:bounceIn .8s cubic-bezier(.68,-.55,.265,1.55) forwards}
+  .animate-float-phone{animation:floatPhone 6s ease-in-out infinite}
+  .animate-pulse-subtle{animation:pulseSubtle 3s ease-in-out infinite}
+  .animate-pulse-glow{animation:pulseGlow 4s ease-in-out infinite}
+  .animate-bounce-subtle{animation:bounceSubtle 2s ease-in-out infinite}
+  
+  .animate-gradient-text-purple{
+    background:linear-gradient(90deg,#5b4ac7,#8b7fd8,#5b4ac7);
+    background-size:200% 200%;
+    animation:gradientTextPurple 4s ease infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+
+  /* Animation Delays */
+  .animation-delay-100{animation-delay:.1s}
+  .animation-delay-200{animation-delay:.2s}
+  .animation-delay-300{animation-delay:.3s}
+  .animation-delay-400{animation-delay:.4s}
+  .animation-delay-500{animation-delay:.5s}
+  .animation-delay-600{animation-delay:.6s}
+  .animation-delay-700{animation-delay:.7s}
+  .animation-delay-800{animation-delay:.8s}
+  .animation-delay-900{animation-delay:.9s}
+  .animation-delay-1000{animation-delay:1s}
+
+  /* Helper class to reset animations */
+  .animation-reset {
+    animation: none !important;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in-down,
+    .animate-fade-in-up,
+    .animate-slide-in-left,
+    .animate-slide-in-right,
+    .animate-scale-in,
+    .animate-bounce-in,
+    .animate-float-phone,
+    .animate-pulse-subtle,
+    .animate-pulse-glow,
+    .animate-gradient-text-purple,
+    .animate-bounce-subtle {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+
+<script>
+  // Animation Manager for the features section
+  document.addEventListener('DOMContentLoaded', function() {
+    const featuresSection = document.getElementById('features');
+    
+    if (!featuresSection) return;
+    
+    // Function to apply all animations
+    function applyFeaturesAnimations() {
+      // Reset animations first
+      const allAnimatedElements = featuresSection.querySelectorAll('[class*="animate-"]');
+      allAnimatedElements.forEach(el => {
+        el.classList.add('animation-reset');
+      });
+      
+      // Trigger reflow
+      void featuresSection.offsetWidth;
+      
+      // Remove reset classes
+      allAnimatedElements.forEach(el => {
+        el.classList.remove('animation-reset');
+      });
+      
+      // Apply heading animations
+      const heading = featuresSection.querySelector('h2.font-bold');
+      const headingSpan = heading.querySelector('span:first-child');
+      const description = featuresSection.querySelector('.text-base');
+      
+      if (headingSpan) {
+        headingSpan.classList.add('animate-gradient-text-purple');
+      }
+      
+      if (heading) {
+        heading.classList.add('animate-fade-in-down');
+      }
+      
+      if (description) {
+        description.classList.add('animate-fade-in-up');
+        description.classList.add('animation-delay-100');
+      }
+      
+      // Apply animations to left features
+      const leftFeatures = featuresSection.querySelectorAll('div.space-y-6:first-child > div[data-feature-index]');
+      leftFeatures.forEach((feature, index) => {
+        // Add slide-in-left animation with delay
+        feature.classList.add('animate-slide-in-left');
+        feature.classList.add(`animation-delay-${(index + 2) * 100}`);
+        
+        // Add bounce animation to icon
+        const iconContainer = feature.querySelector('.bg-\\[\\#d5f2f0\\]');
+        if (iconContainer) {
+          iconContainer.classList.add('animate-bounce-in');
+          iconContainer.classList.add(`animation-delay-${(index + 2) * 100 + 200}`);
+        }
+      });
+      
+      // Apply animations to right features
+      const rightFeatures = featuresSection.querySelectorAll('div.space-y-6:last-child > div[data-feature-index]');
+      rightFeatures.forEach((feature, index) => {
+        // Add slide-in-right animation with delay
+        feature.classList.add('animate-slide-in-right');
+        feature.classList.add(`animation-delay-${(index + 2) * 100}`);
+        
+        // Add bounce animation to icon
+        const iconContainer = feature.querySelector('.bg-\\[\\#d5f2f0\\]');
+        if (iconContainer) {
+          iconContainer.classList.add('animate-bounce-in');
+          iconContainer.classList.add(`animation-delay-${(index + 2) * 100 + 200}`);
+        }
+      });
+      
+      // Apply animations to phone image
+      const phoneContainer = featuresSection.querySelector('.relative.flex.justify-center');
+      const phoneImage = document.getElementById('features-phone-image');
+      const glowEffect = featuresSection.querySelector('.absolute.-inset-3');
+      
+      if (phoneContainer) {
+        phoneContainer.classList.add('animate-scale-in');
+        phoneContainer.classList.add('animation-delay-300');
+      }
+      
+      if (phoneImage?.parentElement) {
+        phoneImage.parentElement.classList.add('animate-float-phone');
+      }
+      
+      if (glowEffect) {
+        glowEffect.classList.add('animate-pulse-glow');
+        glowEffect.classList.add('animation-delay-400');
+      }
+      
+      console.log('Features animations applied!');
+    }
+    
+    // Function to check if element is in viewport
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      
+      return (
+        rect.top <= windowHeight * 0.8 &&
+        rect.bottom >= windowHeight * 0.2
+      );
+    }
+    
+    // Initial animation state
+    let featuresAnimationsPlayed = false;
+    
+    // Play animations when section comes into view
+    function playFeaturesAnimationsOnScroll() {
+      if (!featuresAnimationsPlayed && isElementInViewport(featuresSection)) {
+        applyFeaturesAnimations();
+        featuresAnimationsPlayed = true;
+      }
+    }
+    
+    // Listen for hash change (when navbar link is clicked)
+    window.addEventListener('hashchange', function() {
+      if (window.location.hash === '#features') {
+        // Small delay to ensure scroll completes
+        setTimeout(() => {
+          applyFeaturesAnimations();
+          featuresAnimationsPlayed = true;
+        }, 300);
+      }
+    });
+    
+    // Listen for click events on navbar links
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a[href="#features"]');
+      if (link) {
+        e.preventDefault();
+        
+        // Scroll to section
+        featuresSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Play animations after scroll
+        setTimeout(() => {
+          applyFeaturesAnimations();
+          featuresAnimationsPlayed = true;
+        }, 500);
+      }
+    });
+    
+    // Set up Intersection Observer
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !featuresAnimationsPlayed) {
+            applyFeaturesAnimations();
+            featuresAnimationsPlayed = true;
+          }
+        });
+      }, {
+        threshold: 0.3,
+        rootMargin: '0px 0px -50px 0px'
+      });
+      
+      observer.observe(featuresSection);
+    } else {
+      // Fallback for older browsers
+      window.addEventListener('scroll', playFeaturesAnimationsOnScroll);
+      window.addEventListener('resize', playFeaturesAnimationsOnScroll);
+    }
+    
+    // Initial check
+    setTimeout(() => {
+      if (isElementInViewport(featuresSection)) {
+        applyFeaturesAnimations();
+        featuresAnimationsPlayed = true;
+      }
+    }, 100);
+    
+    // Also play animations if user is already on #features page
+    if (window.location.hash === '#features') {
+      setTimeout(() => {
+        applyFeaturesAnimations();
+        featuresAnimationsPlayed = true;
+      }, 500);
+    }
+  });
+</script>

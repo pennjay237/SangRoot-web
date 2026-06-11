@@ -3,6 +3,7 @@ const navLinks = [
   { name: 'Join Our Community', href: '/#community' },
   { name: 'Features', href: '/#features' },
   { name: 'About Us', href: '/#about' },
+  { name: 'Demo', href: '/#demo' },
   { name: 'Contact Us', href: '/#contact' },
 ];
 ---
@@ -13,19 +14,19 @@ const navLinks = [
       <!-- Logo: SangRoot with blood drop 'o's -->
       <a href="/" class="flex items-center space-x-2 group">
         <!-- Medical blood drop icon with cross -->
-        <div class="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 animate-bounce-in relative overflow-hidden">
-          <svg class="w-6 h-6 text-white relative z-10" viewBox="0 0 24 24" fill="currentColor">
+        <div class="w-8 h-8 md:w-10 md:h-10 bg-primary-500 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 animate-bounce-in relative overflow-hidden">
+          <svg class="w-5 h-5 md:w-6 md:h-6 text-white relative z-10" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2.5c-3.5 0-6.5 3-6.5 6.5 0 4 6.5 11 6.5 11s6.5-7 6.5-11c0-3.5-3-6.5-6.5-6.5z" />
             <rect x="10" y="7" width="4" height="8" fill="white" />
             <rect x="7" y="10" width="10" height="4" fill="white" />
           </svg>
-          <svg class="absolute bottom-1 w-8 h-2 text-white opacity-30" viewBox="0 0 40 10">
+          <svg class="absolute bottom-1 w-6 h-2 md:w-8 md:h-2 text-white opacity-30" viewBox="0 0 40 10">
             <path d="M0,5 L8,5 L12,1 L16,9 L20,5 L28,5 L32,1 L36,9 L40,5" stroke="white" stroke-width="1.5" fill="none" class="animate-pulse" />
           </svg>
         </div>
         
         <!-- SangRoot text with blood drop 'o's facing downward -->
-        <span class="text-xl md:text-2xl font-heading font-bold text-gray-900 group-hover:text-primary-500 transition-colors duration-300 flex items-center">
+        <span class="text-lg md:text-2xl font-heading font-bold text-gray-900 group-hover:text-primary-500 transition-colors duration-300 flex items-center">
           <span>Sang</span>
           <span class="text-primary-500 flex items-center">
             <!-- R (first letter) -->
@@ -33,7 +34,7 @@ const navLinks = [
             
             <!-- First 'o' transformed into downward-facing blood drop -->
             <span class="relative inline-flex items-center justify-center mx-[-2px]">
-              <svg class="w-5 h-5 text-primary-500 transform rotate-180" viewBox="0 0 24 24" fill="currentColor">
+              <svg class="w-4 h-4 md:w-5 md:h-5 text-primary-500 transform rotate-180" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2.5c-3.5 0-6.5 3-6.5 6.5 0 4 6.5 11 6.5 11s6.5-7 6.5-11c0-3.5-3-6.5-6.5-6.5z" />
               </svg>
               <span class="sr-only">o</span>
@@ -41,7 +42,7 @@ const navLinks = [
             
             <!-- Second 'o' transformed into downward-facing blood drop -->
             <span class="relative inline-flex items-center justify-center mx-[-2px]">
-              <svg class="w-5 h-5 text-primary-500 transform rotate-180" viewBox="0 0 24 24" fill="currentColor">
+              <svg class="w-4 h-4 md:w-5 md:h-5 text-primary-500 transform rotate-180" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2.5c-3.5 0-6.5 3-6.5 6.5 0 4 6.5 11 6.5 11s6.5-7 6.5-11c0-3.5-3-6.5-6.5-6.5z" />
               </svg>
               <span class="sr-only">o</span>
@@ -54,17 +55,17 @@ const navLinks = [
       </a>
 
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center space-x-8">
+      <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
         {navLinks.map((link, index) => (
           <a 
             key={index}
             href={link.href} 
-            class={`text-gray-700 hover:text-primary-500 font-medium transition-all duration-200 hover:scale-110 animate-fade-in animation-delay-${(index + 2) * 100}`}
+            class={`text-sm lg:text-base text-gray-700 hover:text-primary-500 font-medium transition-all duration-200 hover:scale-110 animate-fade-in animation-delay-${(index + 2) * 100} whitespace-nowrap`}
           >
             {link.name}
           </a>
         ))}
-        <a href="/registerDonor" class="btn-primary hover:scale-105 active:scale-95 transition-transform duration-200 animate-pulse-glow-border animate-fade-in animation-delay-500">
+        <a href="/registerDonor" class="btn-primary text-sm lg:text-base hover:scale-105 active:scale-95 transition-transform duration-200 animate-pulse-glow-border animate-fade-in animation-delay-600 whitespace-nowrap">
           Donate Blood
         </a>
       </div>
@@ -89,12 +90,12 @@ const navLinks = [
         <a 
           key={index}
           href={link.href} 
-          class="block py-2 text-gray-700 hover:text-primary-500 font-medium transition-all duration-200 hover:translate-x-2 hover:scale-105"
+          class="block py-2 text-sm text-gray-700 hover:text-primary-500 font-medium transition-all duration-200 hover:translate-x-2 hover:scale-105"
         >
           {link.name}
         </a>
       ))}
-      <a href="/registerDonor" class="block btn-primary text-center hover:scale-105 active:scale-95 transition-transform duration-200">
+      <a href="/registerDonor" class="block btn-primary text-center text-sm hover:scale-105 active:scale-95 transition-transform duration-200">
         Donate Blood
       </a>
     </div>
@@ -302,6 +303,24 @@ const navLinks = [
 
   .animation-delay-500 {
     animation-delay: 0.5s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  /* Better touch targets for mobile */
+  @media (max-width: 768px) {
+    .section-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    nav a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {

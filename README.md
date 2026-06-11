@@ -44,3 +44,13 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# SangRoot Development Setup
+
+## Development Tools
+- Astro.js with TypeScript
+- Tailwind CSS
+- Biome.js for linting/formatting
+- Husky for git hooks
+- lint-staged for pre-commit checks
+- GitHub Actions CI
+- CodeRabbit AI code reviews

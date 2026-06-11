@@ -1,0 +1,5 @@
+{
+  "*.{js,jsx,ts,tsx,mjs,cjs}": ["biome check --apply --no-errors-on-unmatched"],
+  "*.{astro,html,json,md,mdx,css,scss,sass}": ["biome format --write --no-errors-on-unmatched"],
+  "*.{ts,tsx}": ["biome check --apply-unsafe --no-errors-on-unmatched"]
+}

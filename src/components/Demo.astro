@@ -1,0 +1,281 @@
+<section id="demo" class="section-padding bg-gradient-to-br from-gray-50 to-white">
+  <div class="section-container">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <div class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-4 animate-fade-in-down">
+        Live Demonstration
+      </div>
+      
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4 animate-fade-in-up">
+        See SangRoot In
+        <span class="text-primary-500 block mt-2 animate-gradient-text">Action</span>
+      </h2>
+      
+      <p class="text-gray-600 text-base md:text-lg max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
+        Watch how SangRoot streamlines emergency blood coordination from hospital request to donor confirmation
+      </p>
+    </div>
+
+    <!-- Video Container -->
+    <div class="max-w-4xl mx-auto animate-fade-in-up animation-delay-400">
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-black group">
+        <video 
+          id="demo-video"
+          class="w-full h-auto cursor-pointer"
+          controls
+          controlsList="nodownload"
+          playsinline
+        >
+          <source src="/demo-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <div id="video-overlay" class="absolute inset-0 flex items-center justify-center bg-black/40 transition-opacity duration-300 cursor-pointer group-hover:bg-black/50">
+          <div class="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 group-hover:scale-110">
+            <svg class="w-10 h-10 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      
+      <p class="text-center text-gray-500 text-sm mt-4">
+        Demo: Emergency blood request coordination process (2 min)
+      </p>
+    </div>
+    
+    <!-- Features Grid Below Video -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-16">
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up animation-delay-100">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">Real-time Matching</h3>
+        <p class="text-gray-600 text-sm">AI-powered donor matching in seconds based on blood type, location, and availability</p>
+      </div>
+      
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up animation-delay-200">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">Automated Communication</h3>
+        <p class="text-gray-600 text-sm">Instant SMS and in-app notifications keep all parties informed at every step</p>
+      </div>
+      
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up animation-delay-300">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">Privacy Protected</h3>
+        <p class="text-gray-600 text-sm">HIPAA-compliant data handling with explicit consent tracking for every interaction</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes gradientText {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-down {
+    animation: fadeInDown 0.6s ease-out forwards;
+  }
+
+  .animate-gradient-text {
+    background: linear-gradient(90deg, #ef4444, #dc2626, #ef4444);
+    background-size: 200% 200%;
+    animation: gradientText 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animate-pulse-ring {
+    animation: pulse-ring 2s ease-out infinite;
+  }
+  
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animation-reset {
+    animation: none !important;
+  }
+  
+  #demo-video {
+    transition: transform 0.3s ease;
+  }
+  
+  .group:hover #demo-video {
+    transform: scale(1.02);
+  }
+  
+  #video-overlay {
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  @media (max-width: 640px) {
+    .section-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    #demo-video {
+      border-radius: 1rem;
+    }
+  }
+  
+  video::-webkit-media-controls-panel {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+  }
+  
+  video::-webkit-media-controls-play-button {
+    background-color: #dc2626;
+    border-radius: 50%;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const demoSection = document.getElementById('demo');
+    const video = document.getElementById('demo-video');
+    const overlay = document.getElementById('video-overlay');
+    
+    if (!demoSection || !video) return;
+    
+    const animatedElements = demoSection.querySelectorAll(
+      '.animate-fade-in-down, .animate-fade-in-up, .animate-gradient-text'
+    );
+    
+    function playAllAnimations() {
+      animatedElements.forEach(el => {
+        el.classList.add('animation-reset');
+        void el.offsetWidth;
+        el.classList.remove('animation-reset');
+      });
+    }
+    
+    if (overlay) {
+      overlay.addEventListener('click', function() {
+        video.play();
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+          overlay.style.display = 'none';
+        }, 300);
+      });
+    }
+    
+    video.addEventListener('ended', function() {
+      if (overlay) {
+        overlay.style.display = 'flex';
+        setTimeout(() => {
+          overlay.style.opacity = '1';
+        }, 10);
+      }
+    });
+    
+    video.addEventListener('play', function() {
+      if (overlay && overlay.style.display !== 'none') {
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+          overlay.style.display = 'none';
+        }, 300);
+      }
+    });
+    
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top <= window.innerHeight * 0.8 &&
+        rect.bottom >= window.innerHeight * 0.2
+      );
+    }
+    
+    let animationsPlayed = false;
+    
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !animationsPlayed) {
+            playAllAnimations();
+            animationsPlayed = true;
+          }
+        });
+      }, { threshold: 0.3 });
+      
+      observer.observe(demoSection);
+    }
+    
+    setTimeout(() => {
+      if (isElementInViewport(demoSection)) {
+        playAllAnimations();
+        animationsPlayed = true;
+      }
+    }, 200);
+  });
+</script>

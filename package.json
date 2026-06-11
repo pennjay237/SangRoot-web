@@ -1,16 +1,32 @@
 {
-  "name": "",
+  "name": "sangroot-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "biome format --write .",
+    "lint": "biome lint --write .",
+    "check": "biome check --write .",
+    "ci:lint": "biome ci .",
+    "prepare": "husky"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.2",
-    "astro": "^4.4.0",
-    "tailwindcss": "^3.4.19"
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^5.0.0",
+    "@biomejs/biome": "^1.9.4",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "tailwindcss": "^3.4.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": ["biome check --apply --no-errors-on-unmatched"],
+    "*.{astro,html,json,md,mdx,css,scss,sass}": ["biome format --write --no-errors-on-unmatched"],
+    "*.{ts,tsx}": ["biome check --apply-unsafe --no-errors-on-unmatched"]
   }
 }

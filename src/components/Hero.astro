@@ -1,0 +1,303 @@
+---
+// You can replace these placeholder links with actual app store URLs later
+const appStoreUrl = '#';
+const googlePlayUrl = '#';
+---
+
+<section class="bg-gradient-to-br from-primary-50 via-white to-secondary-50 pt-24 md:pt-32 pb-16 section-padding relative overflow-hidden">
+  <!-- Animated background elements -->
+  <div class="absolute top-20 left-10 w-72 h-72 bg-primary-200/30 rounded-full blur-3xl animate-blob"></div>
+  <div class="absolute top-40 right-10 w-96 h-96 bg-secondary-200/30 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+  <div class="absolute -bottom-20 left-1/2 w-80 h-80 bg-primary-300/20 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
+
+  <div class="section-container relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Left Content -->
+      <div class="text-center lg:text-left">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 leading-tight mb-6 animate-fade-in-up">
+          Saving Lives Through
+          <span class="text-primary-500 block mt-2 animate-gradient-text">Smart Coordination</span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up animation-delay-200">
+          SangRoot connects doctors to blood banks and donors during emergencies. It removes delays, protects the privacy of donors, and helps doctors focus on patient care by intergrating AI agents.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 animate-fade-in-up animation-delay-400">
+          <a href="/registerDonor" class="btn-primary text-lg hover:scale-105 active:scale-95 transition-transform duration-200 animate-pulse-glow-border">
+            Register as Donor
+          </a>
+          <a href="#about" class="btn-outline text-lg hover:scale-105 active:scale-95 transition-transform duration-200">
+            Learn More
+          </a>
+        </div>
+
+        <!-- App Download Buttons -->
+        <div class="space-y-4 animate-fade-in-up animation-delay-600">
+          <p class="text-sm font-semibold text-gray-700 uppercase tracking-wide animate-bounce-subtle">
+            Download Our Mobile App
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <!-- App Store Button -->
+            <a 
+              href={appStoreUrl} 
+              class="inline-flex items-center justify-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:scale-105 active:scale-95 transition-all duration-200 group"
+            >
+              <svg class="w-8 h-8 mr-3 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5M13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+              </svg>
+              <div class="text-left">
+                <div class="text-xs">Download on the</div>
+                <div class="text-lg font-semibold -mt-1">App Store</div>
+              </div>
+            </a>
+
+            <!-- Google Play Button -->
+            <a 
+              href={googlePlayUrl} 
+              class="inline-flex items-center justify-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 hover:scale-105 active:scale-95 transition-all duration-200 group"
+            >
+              <svg class="w-8 h-8 mr-3 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+              </svg>
+              <div class="text-left">
+                <div class="text-xs">GET IT ON</div>
+                <div class="text-lg font-semibold -mt-1">Google Play</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative animate-scale-in animation-delay-300">
+        <!-- Placeholder for hero image - replace with actual image -->
+        <div class="relative bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl shadow-2xl aspect-square max-w-md mx-auto lg:max-w-none overflow-hidden group hover:shadow-3xl transition-shadow duration-500">
+          <!-- Placeholder SVG - replace with actual image -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <svg class="w-64 h-64 text-primary-300 animate-float" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <!-- Floating elements for visual interest -->
+          <div class="absolute top-8 right-8 w-20 h-20 bg-primary-400 rounded-full opacity-20 animate-pulse-float"></div>
+          <div class="absolute bottom-8 left-8 w-16 h-16 bg-secondary-400 rounded-full opacity-20 animate-pulse-float animation-delay-1000"></div>
+        </div>
+        
+        <!-- Stats badges -->
+        <div class="absolute -bottom-6 left-0 right-0 flex justify-center gap-4 animate-slide-up animation-delay-800">
+          <div class="bg-white rounded-lg shadow-lg px-6 py-3 hover:scale-110 transition-transform duration-300 animate-bounce-in">
+            <div class="text-2xl font-bold text-primary-500">24/7</div>
+            <div class="text-xs text-gray-600">Available</div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg px-6 py-3 hover:scale-110 transition-transform duration-300 animate-bounce-in animation-delay-200">
+            <div class="text-2xl font-bold text-secondary-500">Fast</div>
+            <div class="text-xs text-gray-600">Response</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3) translateY(20px);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05) translateY(0);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes pulseFloat {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(-10px) scale(1.1);
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes bounceSubtle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  @keyframes gradientText {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    25% {
+      transform: translate(20px, -20px) scale(1.1);
+    }
+    50% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    75% {
+      transform: translate(10px, 10px) scale(1.05);
+    }
+  }
+
+  @keyframes pulseGlowBorder {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(239, 68, 68, 0.6);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 1s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-bounce-in {
+    animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-float {
+    animation: pulseFloat 4s ease-in-out infinite;
+  }
+
+  .animate-bounce-subtle {
+    animation: bounceSubtle 2s ease-in-out infinite;
+  }
+
+  .animate-blob {
+    animation: blob 10s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow-border {
+    animation: pulseGlowBorder 2s ease-in-out infinite;
+  }
+
+  .animate-gradient-text {
+    background: linear-gradient(90deg, #ef4444, #dc2626, #ef4444);
+    background-size: 200% 200%;
+    animation: gradientText 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  .animation-delay-800 {
+    animation-delay: 0.8s;
+  }
+
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
